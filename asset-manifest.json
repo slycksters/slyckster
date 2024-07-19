@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/slyckster/static/css/main.4ba75605.css",
+    "main.js": "/slyckster/static/js/main.061259e8.js",
+    "static/media/my-photo.png": "/slyckster/static/media/my-photo.37187be9dd4d394f0536.png",
+    "static/media/sxz-logo.png": "/slyckster/static/media/sxz-logo.179ffc7b69ac664e44bc.png",
+    "index.html": "/slyckster/index.html",
+    "main.4ba75605.css.map": "/slyckster/static/css/main.4ba75605.css.map",
+    "main.061259e8.js.map": "/slyckster/static/js/main.061259e8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4ba75605.css",
+    "static/js/main.061259e8.js"
+  ]
+}
