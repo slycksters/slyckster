@@ -69,5 +69,5 @@ export const createGalaxyBackground = () => {
         if (dots.length > numberOfDots) {
             dots[0].remove(); // Remove the oldest dot if there are too many
         }
-    }, 1000); // Check every second
+    }, 1); // Check every second
 };
