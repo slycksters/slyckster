@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/slyckster/static/css/main.4ba75605.css",
-    "main.js": "/slyckster/static/js/main.9aea7547.js",
+    "main.js": "/slyckster/static/js/main.84314974.js",
     "static/media/swarm-anima-squad-music.mp3": "/slyckster/static/media/swarm-anima-squad-music.397d3ab4af92bcc12971.mp3",
     "static/media/my-photo.png": "/slyckster/static/media/my-photo.37187be9dd4d394f0536.png",
     "static/media/sxz-logo.png": "/slyckster/static/media/sxz-logo.179ffc7b69ac664e44bc.png",
     "index.html": "/slyckster/index.html",
     "main.4ba75605.css.map": "/slyckster/static/css/main.4ba75605.css.map",
-    "main.9aea7547.js.map": "/slyckster/static/js/main.9aea7547.js.map"
+    "main.84314974.js.map": "/slyckster/static/js/main.84314974.js.map"
   },
   "entrypoints": [
     "static/css/main.4ba75605.css",
-    "static/js/main.9aea7547.js"
+    "static/js/main.84314974.js"
   ]
 }
