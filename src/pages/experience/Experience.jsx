@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './styles.module.css';
-import { faAngular, faFigma, faGithub, faJs, faReact, faVuejs } from '@fortawesome/free-brands-svg-icons';
+import { faAngular, faBootstrap, faCss3, faFigma, faGit, faGithub, faHtml5, faJs, faReact, faVuejs } from '@fortawesome/free-brands-svg-icons';
 import { faC } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 
 const Experience = () => {
-    const skillIcons = [faReact, faJs, faC, faGithub, faFigma, faVuejs, faAngular];
+    const skillIcons = [faHtml5, faCss3, faJs, faC, faBootstrap, faVuejs, faAngular, faReact, faGithub, faFigma, faGit];
     const [hoveredIcon, setHoveredIcon] = useState();
 
     return (
@@ -15,14 +15,14 @@ const Experience = () => {
             <div className={styles.informations}>
                 <div className={styles.informationItem}>
                     <div>
-                        <span className={styles.role}>Skill sets</span>
+                        <span className={styles.role}>Skill Stack</span>
                     </div>
 
                     <div style={{ height: '10px' }}></div>
                     
                     <div className={styles.skillBoxWrapper}>
-                        {skillIcons.map((icon) => (
-                            <div className={styles.skillBox} onMouseEnter={() => setHoveredIcon(icon)} onMouseLeave={() => setHoveredIcon()}>
+                        {skillIcons.map((icon, index) => (
+                            <div key={`skill-stack-icon-${index}`} className={styles.skillBox} onMouseEnter={() => setHoveredIcon(icon)} onMouseLeave={() => setHoveredIcon()}>
                                 <FontAwesomeIcon icon={icon} fontSize={'50px'} bounce={hoveredIcon === icon} />
                             </div>
                         ))}

@@ -5,6 +5,8 @@ import About from './pages/about/About';
 import Experience from './pages/experience/Experience';
 import Projects from './pages/projects/Projects';
 import { createGalaxyBackground, createMouseTrail } from './helpers/animations';
+import { swarmAnimaSquadMusic } from './assets';
+import BackgroundMusic from './components/background-music/BackgroundMusic';
 
 function App() {
 
@@ -15,7 +17,10 @@ function App() {
 
   return (
     <main className="main">
-      <div class="background"></div>
+      {/* Background */}
+      <div className="background"></div>
+      <BackgroundMusic src={swarmAnimaSquadMusic} volume={0.04} />
+
       {/* Sidebar */}
       <div>
         <Sidebar />

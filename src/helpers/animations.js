@@ -37,7 +37,7 @@ export const createMouseTrail = () => {
 
 export const createGalaxyBackground = () => {
     const background = document.querySelector('.background');
-    const numberOfDots = 200; // Number of dots to appear at once
+    const numberOfDots = 5000; // Number of dots to appear at once
     const intervalTime = 500; // Time between creating new dots in milliseconds
 
     function createDot() {
