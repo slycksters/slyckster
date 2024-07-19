@@ -1,0 +1,12 @@
+.projects {
+    padding: 50px;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.title:hover {
+    color: var(--color-6);
+}

@@ -1,24 +1,35 @@
-import logo from './logo.svg';
+import { useEffect } from 'react';
 import './App.css';
+import Sidebar from './components/sidebar/Sidebar';
+import About from './pages/about/About';
+import Experience from './pages/experience/Experience';
+import Projects from './pages/projects/Projects';
+import { createGalaxyBackground, createMouseTrail } from './helpers/animations';
 
 function App() {
+
+  useEffect(() => {
+    createGalaxyBackground();
+    createMouseTrail();  
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="main">
+      <div class="background"></div>
+      {/* Sidebar */}
+      <div>
+        <Sidebar />
+      </div>
+
+      {/* Content */}
+      <div className="content">
+        <About />
+        <Experience />
+        <Projects />
+      </div>
+
+      <div style={{ width: '200px' }}></div>
+    </main>
   );
 }
 

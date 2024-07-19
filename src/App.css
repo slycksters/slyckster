@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+/* @import 'bootstrap/dist/css/bootstrap.min.css'; */
+
+:root {
+  --color-1: #0B0C10;
+  --color-2: #1F2833;
+  --color-3: #C5C6C7;
+  --color-4: #66FCF1;
+  --color-5: #45A29E;
+  --color-6: #86C232;
+  --color-7: #1D1D20;
+  --color-8: #787878;
+  --color-9: #1F2833;
+  --color-10: #66FCF1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  line-height: 2;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* width */
+::-webkit-scrollbar {
+  width: 3px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--color-7); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-5); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-8)
+}
+
+body {
+  /* background: url('./assets/images/snow-background.webp'); */
+  background-color: var(--color-1);
+  color: var(--color-4);
+  overflow: hidden;
+}
+
+.main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.content {
+  margin-top: 50px;
+  height: calc(100vh - 100px);
+  position: relative;
+  width: 100%;
+  overflow-y: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Mouse trail */
+.trail {
+  background-color: var(--color-3);
+  height: 1px;
+  opacity: 1;
+  position: absolute;
+  transition: opacity 0.1s ease-out;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.dot {
+  position: absolute;
+  background-color: white;
+  clip-path: polygon(
+      50% 0%,  /* Top */
+      61% 35%, /* Top-right */
+      98% 35%, /* Bottom-right */
+      68% 57%, /* Bottom-right inward */
+      79% 91%, /* Bottom-right */
+      50% 70%, /* Bottom-middle */
+      21% 91%, /* Bottom-left */
+      32% 57%, /* Bottom-left inward */
+      2% 35%,  /* Bottom-left */
+      39% 35%  /* Top-left */
+  );
+  opacity: 0;
+  animation: appear 2s infinite;
+}
+
+@keyframes appear {
+  0% {
+      opacity: 0;
+      height: 0px;
+      width: 0px;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+      opacity: 1;
+      height: 5px;
+      width: 5px;
+  }
+  100% {
+      opacity: 0;
+      height: 0px;
+      width: 0px;
   }
 }
