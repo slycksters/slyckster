@@ -28,8 +28,9 @@ const Sidebar = () => {
                                 <li
                                     key={`link-icon-${index}`} className={styles.sidebarListItem}
                                     style={{ marginTop: index === 0 ? '2px' : null }}
+                                    onClick={() => slideToElement(link.path)}
                                 >
-                                    <FontAwesomeIcon icon={link.icon} />
+                                    <FontAwesomeIcon icon={link.icon} style={{ cursor: 'pointer' }} />
                                 </li>
                             ))}
                         </ul>
@@ -38,7 +39,7 @@ const Sidebar = () => {
                 <div>
                     <ul className={styles.sidebarList}>
                         {links.map((link, index) => (
-                            <li key={`link-${index}`} className={styles.sidebarListItem}>
+                            <li key={`link-${index}`} className={`${styles.sidebarListItem} ${styles.linkText}`}>
                                 <span
                                     className={styles.sidebarLink}
                                     onClick={() => slideToElement(link.path)}

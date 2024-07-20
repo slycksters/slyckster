@@ -1,11 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './styles.module.css';
-import { faAngular, faBootstrap, faCss3, faFigma, faGit, faGithub, faHtml5, faJs, faReact, faVuejs } from '@fortawesome/free-brands-svg-icons';
+import { faAngular, faBootstrap, faCss3, faFigma, faNodeJs, faGit, faGithub, faHtml5, faJs, faReact, faVuejs, faNpm } from '@fortawesome/free-brands-svg-icons';
 import { faC } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 
 const Experience = () => {
-    const skillIcons = [faHtml5, faCss3, faJs, faC, faBootstrap, faVuejs, faAngular, faReact, faGithub, faFigma, faGit];
+    const skillIcons = [faHtml5, faCss3, faJs, faC, faBootstrap, faVuejs, faAngular, faReact, faGithub, faFigma, faGit, faNodeJs, faNpm];
     const [hoveredIcon, setHoveredIcon] = useState();
 
     return (

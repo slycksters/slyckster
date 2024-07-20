@@ -43,7 +43,6 @@
 }
 
 body {
-  /* background: url('./assets/images/snow-background.webp'); */
   background-color: var(--color-1);
   color: var(--color-4);
   overflow: hidden;
