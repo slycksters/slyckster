@@ -20,9 +20,9 @@ const Experience = () => {
 
                     <div style={{ height: '10px' }}></div>
                     
-                    <div className={styles.skillBoxWrapper}>
+                    <div className={'row'}>
                         {skillIcons.map((icon, index) => (
-                            <div key={`skill-stack-icon-${index}`} className={styles.skillBox} onMouseEnter={() => setHoveredIcon(icon)} onMouseLeave={() => setHoveredIcon()}>
+                            <div key={`skill-stack-icon-${index}`} className={`${styles.skillBox} col-xs-4 col-sm-2 col-lg-1`} onMouseEnter={() => setHoveredIcon(icon)} onMouseLeave={() => setHoveredIcon()}>
                                 <FontAwesomeIcon icon={icon} fontSize={'50px'} bounce={hoveredIcon === icon} />
                             </div>
                         ))}

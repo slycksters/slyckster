@@ -60,6 +60,11 @@ body {
   overflow-y: auto;
 }
 
+.social {
+  width: 200px;
+  z-index: 1;
+}
+
 /* Mouse trail */
 .trail {
   background-color: var(--color-3);

@@ -1,8 +1,16 @@
 .about {
-    width: 100%;
     text-align: center;
     height: calc(100vh - 150px);
     padding-top: 50px;
+    overflow-x: hidden !important;
+    position: relative;
+}
+
+.myName {
+    position: absolute;
+    left: 0;
+    margin-top: 50px;
+    font-weight: 600;
 }
 
 .title {

@@ -24,16 +24,16 @@ const Sidebar = () => {
             <div className={styles.sidebarListWrapper}>
                 <div>
                     <ul className={styles.sidebarList}>
-                            {links.map((link, index) => (
-                                <li
-                                    key={`link-icon-${index}`} className={styles.sidebarListItem}
-                                    style={{ marginTop: index === 0 ? '2px' : null }}
-                                    onClick={() => slideToElement(link.path)}
-                                >
-                                    <FontAwesomeIcon icon={link.icon} style={{ cursor: 'pointer' }} />
-                                </li>
-                            ))}
-                        </ul>
+                        {links.map((link, index) => (
+                            <li
+                                key={`link-icon-${index}`} className={styles.sidebarListItem}
+                                style={{ marginTop: index === 0 ? '2px' : null }}
+                                onClick={() => slideToElement(link.path)}
+                            >
+                                <FontAwesomeIcon icon={link.icon} style={{ cursor: 'pointer' }} />
+                            </li>
+                        ))}
+                    </ul>
                 </div>
                 <div className={styles.divider}></div>
                 <div>

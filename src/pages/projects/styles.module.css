@@ -10,3 +10,106 @@
 .title:hover {
     color: var(--color-6);
 }
+
+.projects {
+    padding: 50px;
+}
+
+.projectsList {
+    margin-top: 10px;
+}
+
+.projectItemWrapper {
+    padding: 10px;
+    position: relative;
+}
+
+.projectItemWrapper::before, .projectItemWrapper::after, .projectItemWrapper div::before, .projectItemWrapper div::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--color-9);
+}
+
+.projectItemWrapper::before {
+    top: -4px;
+    left: -4px;
+    border-right: none;
+    border-bottom: none;
+    transition: top 0.1s ease-in, left 0.1s ease-out;
+}
+
+.projectItemWrapper:hover::before {
+    top: -8px;
+    left: -8px;
+}
+
+.projectItemWrapper::after {
+    top: -4px;
+    right: -4px;
+    border-left: none;
+    border-bottom: none;
+    transition: top 0.1s ease-in, right 0.1s ease-out;
+}
+
+.projectItemWrapper:hover::after {
+    top: -8px;
+    right: -8px;
+}
+
+.projectItemWrapper div::before {
+    bottom: -4px;
+    left: -4px;
+    border-right: none;
+    border-top: none;
+    transition: bottom 0.1s ease-in, left 0.1s ease-out;
+}
+
+.projectItemWrapper:hover div::before {
+    bottom: -8px;
+    left: -8px;
+}
+
+.projectItemWrapper div::after {
+    bottom: -4px;
+    right: -4px;
+    border-left: none;
+    border-top: none;
+    transition: bottom 0.1s ease-in, right 0.1s ease-out;
+}
+
+.projectItemWrapper:hover div::after {
+    bottom: -8px;
+    right: -8px;
+}
+
+.projectItemWrapper:hover .projectItem {
+    background-color: var(--color-4);
+    color: var(--color-7);
+}
+
+.projectItem {
+    width: 100%;
+    border: 2px solid var(--color-7);
+    color: var(--color-4);
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 15px;
+    transition: background-color 0.3s ease-in, color 0.3s ease-out;
+}
+
+.projectItemImage {
+    width: 100%;
+    height: auto;
+}
+
+.projectItemImageWrapper {
+    height: 154px;
+    overflow-y: hidden;
+}
+
+.projectName {
+    margin-top: 25px;
+}
