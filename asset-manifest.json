@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.css": "/slyckster/static/css/main.8584eb58.css",
-    "main.js": "/slyckster/static/js/main.9896ad8d.js",
+    "main.css": "/slyckster/static/css/main.a08a3f1d.css",
+    "main.js": "/slyckster/static/js/main.8d6b8f56.js",
     "static/media/swarm-anima-squad-music.mp3": "/slyckster/static/media/swarm-anima-squad-music.397d3ab4af92bcc12971.mp3",
+    "static/media/b2bme.png": "/slyckster/static/media/b2bme.119df22e46f54502c212.png",
+    "static/media/tv-scheduling.png": "/slyckster/static/media/tv-scheduling.705d3597a2841663083a.png",
+    "static/media/encore-monitoring.png": "/slyckster/static/media/encore-monitoring.12eef9cb059ec609b6d6.png",
     "static/media/chibi-katarina.png": "/slyckster/static/media/chibi-katarina.e063c559c02f8672ef45.png",
+    "static/media/media-planning.png": "/slyckster/static/media/media-planning.9fb248182273d9f7cd5d.png",
     "static/media/my-photo.png": "/slyckster/static/media/my-photo.37187be9dd4d394f0536.png",
     "static/media/sxz-logo.png": "/slyckster/static/media/sxz-logo.179ffc7b69ac664e44bc.png",
     "index.html": "/slyckster/index.html",
-    "main.8584eb58.css.map": "/slyckster/static/css/main.8584eb58.css.map",
-    "main.9896ad8d.js.map": "/slyckster/static/js/main.9896ad8d.js.map"
+    "main.a08a3f1d.css.map": "/slyckster/static/css/main.a08a3f1d.css.map",
+    "main.8d6b8f56.js.map": "/slyckster/static/js/main.8d6b8f56.js.map"
   },
   "entrypoints": [
-    "static/css/main.8584eb58.css",
-    "static/js/main.9896ad8d.js"
+    "static/css/main.a08a3f1d.css",
+    "static/js/main.8d6b8f56.js"
   ]
 }
