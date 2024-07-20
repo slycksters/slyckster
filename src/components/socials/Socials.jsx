@@ -13,6 +13,7 @@ const Socials = ({ volume, setVolume }) => {
         { path: 'https://www.tiktok.com/@zephy_ron', icon: faTiktok },
     ];
     const [hoveredIcon, setHoveredIcon] = useState();
+    const [hasClicked, setHasClicked] = useState(false);
 
     return (
         <div className={styles.socials}>
@@ -21,7 +22,10 @@ const Socials = ({ volume, setVolume }) => {
                     beat={hoveredIcon === (volume === 0 ? faVolumeLow : faVolumeHigh)}
                     icon={volume === 0 ? faVolumeLow : faVolumeHigh}
                     fontSize={'25px'}
-                    onClick={() => setVolume(volume === 0 ? 0.04 : 0)}
+                    onClick={() => {
+                        setVolume(hasClicked && volume === 0.04 ? 0 : 0.04);
+                        setHasClicked(true);
+                    }}
                     onMouseEnter={() => setHoveredIcon(volume === 0 ? faVolumeLow : faVolumeHigh)}
                     onMouseLeave={() => setHoveredIcon()}
                 />
