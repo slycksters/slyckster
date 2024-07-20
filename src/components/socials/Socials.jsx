@@ -23,7 +23,7 @@ const Socials = ({ volume, setVolume }) => {
                     icon={volume === 0 ? faVolumeLow : faVolumeHigh}
                     fontSize={'25px'}
                     onClick={() => {
-                        setVolume(hasClicked && volume === 0.04 ? 0 : 0.04);
+                        setVolume(!hasClicked ? 0.04 : volume === 0.04 ? 0 : 0.04);
                         setHasClicked(true);
                     }}
                     onMouseEnter={() => setHoveredIcon(volume === 0 ? faVolumeLow : faVolumeHigh)}

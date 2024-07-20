@@ -13,9 +13,9 @@ const About = () => {
 
                     <p className={styles.description}>
                         Hello, my name is Ronald. I am a web developer living in Tarlac, Philippines. I began coding in 2018 and enjoy
-                        {' '} <br/>
+                        {' '}
                         learning new things in programming. In my free time, I like to play games such as <b>League of Legends</b>, <b>Mobile</b>
-                        {' '} <br/>
+                        {' '}
                         <b>Legends</b>, <b>Roblox</b> and many others.
                     </p>
 
