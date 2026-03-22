@@ -1,0 +1,5 @@
+.experience {
+  min-height: 100vh;  /* Fallback for older browsers */
+  min-height: 100dvh; /* Modern, mobile-perfect full screen height */
+  width: 100%;
+}

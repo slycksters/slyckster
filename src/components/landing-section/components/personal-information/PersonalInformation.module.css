@@ -1,0 +1,104 @@
+/* --- Personal Information CSS */
+.personalInformation {
+  align-items: flex-start;
+  display: flex;
+  gap: 24px;
+}
+
+.avatar {
+  border-radius: 2px;
+  height: 120px;
+  width: auto;
+}
+
+.infoStack {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.name {
+  font-size: 32px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.aka {
+  color: var(--color-gold);
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 4px;
+}
+
+.location {
+  font-style: normal; /* Removes default address italics */
+  color: var(--text-muted);
+  font-size: 16px;
+  margin: 0; /* Removes default paragraph margin */
+}
+
+.jobTitle {
+  color: var(--color-gold); /* Gold title to show seniority/premium feel */
+}
+
+/* --- Introduction CSS */
+.introduction {
+  color: var(--text-secondary);
+  margin-top: 40px;
+  max-width: 60ch; /* Optimal width for reading */
+}
+
+.introduction > p > strong {
+  color: var(--text-primary);
+}
+
+/* --- Quote CSS */
+.quote {
+  border-left: 2px solid var(--color-gold); /* Subtle vertical line in your accent color */
+  margin: 32px 0 0 0;
+  padding-left: 20px;
+}
+
+.quoteAuthor {
+  color: var(--color-gold);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-top: 8px;
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.quoteText {
+  color: var(--text-primary);
+  font-style: italic;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* --- Button CSS */
+.button {
+  background: transparent;
+  border: 1px solid var(--color-blue);
+  border-radius: 4px;
+  color: var(--text-primary);
+  cursor: pointer;
+  
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  
+  margin-top: 32px;
+  padding: 12px 32px;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background-color: var(--color-blue);
+  box-shadow: 0 0 20px rgba(188, 20, 35, 0.4); /* Subtle red glow */
+  color: var(--text-primary);
+  transform: translateY(-2px);
+}

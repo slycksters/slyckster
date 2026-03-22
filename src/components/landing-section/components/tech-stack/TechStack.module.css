@@ -1,0 +1,93 @@
+.card {
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 6px;
+  color: var(--text-muted);
+  cursor: default;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.08);
+  /* When hovering the card, the icon inside will inherit this color 
+     unless a specific brand color class is active */
+  color: var(--text-primary);
+}
+
+.iconGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.label {
+  color: var(--color-gold);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.mainTitle {
+  color: var(--text-primary);
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 0;
+  position: relative;
+}
+
+.mainTitle::after {
+  background-color: var(--color-gold);
+  border-radius: 2px;
+  content: '';
+  display: block;
+  height: 3px;
+  margin: 0;
+  margin-bottom: 24px;
+  width: 40px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section:first-of-type {
+  margin-bottom: 32px;
+}
+
+.techStack {
+  background-color: var(--bg-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  width: 100%;
+}
+
+/* --- Brand Colors --- */
+.angularColor { color: #ff3131; }
+.bootstrapColor { color: #9d7bd8; }
+.csharpColor { color: #be6fc4; }
+.cssColor { color: #3d9cd7; }
+.dotnetColor { color: #a691ff; }
+.htmlColor { color: #f06529; }
+.javascriptColor { color: #f7df1e; }
+.linqColor { color: #5fa7e8; }
+.materializeColor { color: #ff7e7e; }
+.postgresqlColor { color: #6187ff; }
+.reactColor { color: #61dafb; }
+.tailwindColor { color: #38bdf8; }
+.vueColor { color: #42d392; }
