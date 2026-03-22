@@ -1,5 +1,6 @@
 {
-  "name": "my-portfolio",
+  "homepage": "https://slycksters.github.io/slyckster/",
+  "name": "slyckster",
   "private": true,
   "version": "0.0.0",
   "type": "module",

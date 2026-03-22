@@ -1,5 +1,5 @@
+import { BIO_CONTENT } from '@data';
 import styles from './PersonalInformation.module.css';
-import { BIO_CONTENT } from '../../../../data';
 
 export const PersonalInformation = () => {
   return (

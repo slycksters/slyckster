@@ -1,5 +1,5 @@
+import { TECH_STACK } from '@data';
 import styles from './TechStack.module.css';
-import { TECH_STACK } from '../../../../data';
 
 export const TechStack = () => {
   const iconSettings = { size: 24 };

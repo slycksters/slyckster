@@ -1,5 +1,4 @@
-import { PersonalInformation } from './components';
-import { TechStack } from './components/tech-stack/TechStack';
+import { PersonalInformation, TechStack } from './components';
 import styles from './LandingSection.module.css';
 
 const LandingSection = () => {
