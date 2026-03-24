@@ -1,45 +1,41 @@
-import {
-  enchantedPieceWikiPreview1,
-  enchantedPieceWikiPreview2,
-  enchantedPieceWikiPreview3,
-  op2misePreview1,
-} from '../assets';
+export const EXPERIENCES = [
+  {
+    id: 1,
+    title: 'Front-End Developer',
+    period: '2018 - 2023',
+    periodIso: '2018/2023',
+    description:
+      'Programming gradually became one of my hobbies. I started by learning how to design websites using HTML, JavaScript, Bootstrap, and CSS, including media queries. Eventually, I built a simple CRUD websites using Vue and also explored Angular, but I ended up enjoying React the most.',
+  },
+  {
+    id: 2,
+    title: 'Full-Stack Developer',
+    period: '2023 - present',
+    periodIso: '2023',
+    description:
+      "In 2022, I became a developer at Op2mise, where I started as a Front-End Developer. Over time, I was given backend-related tasks and gradually honed my skills in that area. As of now, I'm more comfortable working on the backend, but I still enjoy front-end work.",
+  },
+];
 
-export const EXPERIENCE_DATA = {
-  professional: [
-    {
-      id: 'prof-1',
-      company: 'Op2mise',
-      duration: '2022 - present',
-      role: 'Full-Stack Developer',
-      description:
-        "I began my career at Op2mise as a Front End Developer, working on projects like Encore Monitoring, B2BME, TV Scheduling, and Media Planning. Over time, I've grown into a Full Stack Developer while also improving my communication and teamwork skills.",
-      projects: [{ id: 'p1', title: 'Op2mise', image: op2misePreview1 }],
-      url: 'https://op2mise.ai/',
-    },
-    // Add more professional jobs here
-  ],
-  personal: [
-    {
-      id: 'pers-1',
-      company: 'Enchanted Piece Wiki',
-      duration: '2025',
-      role: 'Creator',
-      description: `I created a wiki for a Enchanted Piece (originally known as Enchanted) on Roblox. Although it wasn't recognized by the game's owners, it evolved into an unofficial wiki that many players relied on as a source of information.`,
-      projects: [
-        { id: 'pp1', title: 'Landing Page', image: enchantedPieceWikiPreview1 },
-        {
-          id: 'pp2',
-          title: 'Data Information',
-          image: enchantedPieceWikiPreview2,
-        },
-        {
-          id: 'pp3',
-          title: 'Information Overview',
-          image: enchantedPieceWikiPreview3,
-        },
-      ],
-      url: 'https://slycksters.github.io/enchanted-wiki',
-    },
-  ],
-};
+export const PROJECTS = [
+  {
+    id: 1,
+    title: 'Op2mise',
+    period: '2022 - present',
+    periodIso: '2022',
+    jobPosition: 'Full-Stack Developer',
+    url: 'https://op2mise.ai/',
+    description:
+      'A sophisticated marketing analytics ecosystem that leverages AI to automate budget allocation and campaign performance tracking. It provides brands with a clear, data-backed roadmap to increase advertising efficiency across all marketing channels.',
+  },
+  {
+    id: 2,
+    title: 'Enchanted Piece Wiki',
+    period: '2025',
+    periodIso: '2025',
+    jobPosition: 'Creator',
+    url: 'https://slycksters.github.io/enchanted-wiki',
+    description:
+      'A community wiki for the Roblox bandit-beater Enchanted Piece, providing a centralized database for hundreds of players to track game mechanics and character progression.',
+  },
+];

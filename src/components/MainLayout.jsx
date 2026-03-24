@@ -1,11 +1,11 @@
-import Experience from './experience-section/ExperienceSection';
+import ExperienceSection from './experience-section/ExperienceSection';
 import LandingSection from './landing-section/LandingSection';
 
 const MainLayoutComponent = () => {
   return (
     <main>
       <LandingSection />
-      <Experience />
+      <ExperienceSection />
     </main>
   );
 };

@@ -1,0 +1,80 @@
+.experienceSection {
+  width: 100%;
+}
+
+.experienceIconColor {
+  color: var(--color-gold);
+  margin-top: 1px;
+  margin-right: 12px;
+}
+
+.sectionTitle {
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-left: -6px;
+  margin-bottom: 2rem;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-left: 1px solid var(--color-gold);
+}
+
+.timelineItem {
+  padding-left: 1.5rem;
+  position: relative;
+  padding-bottom: 2.5rem; /* Space between items */
+}
+
+/* The Timeline Dot */
+.timelineItem::before {
+  content: '';
+  position: absolute;
+  left: -7px; /* Centers dot exactly on the 1px border */
+  top: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--color-gold);
+  box-shadow: 0 0 0 4px var(--body-bg-color); /* Creates a gap between dot and line */
+}
+
+.jobCard {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.jobHeader {
+  display: flex;
+  align-items: baseline; /* Better alignment for text of different sizes */
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allows period to wrap on very small screens */
+  gap: 0.5rem;
+  margin-top: -4px; /* Aline header to the bullet */
+}
+
+.jobTitle {
+  color: var(--text-accent);
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.jobPeriod {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  font-variant-numeric: tabular-nums; /* Makes dates line up nicely */
+}
+
+.jobDescription {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.95rem;
+}

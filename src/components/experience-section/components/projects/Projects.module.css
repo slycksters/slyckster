@@ -1,0 +1,69 @@
+.projectSection {
+  width: 100%;
+}
+
+.projectIconColor {
+  color: var(--color-gold);
+  margin-top: 1px;
+  margin-right: 12px;
+}
+
+.sectionTitle {
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-left: -6px;
+  margin-bottom: 2rem;
+}
+
+.projects {
+  gap: 12px;
+}
+
+.projectCard {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-default);
+  border-radius: 12px;
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+  margin-bottom: 28px;
+  padding: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.projectCard:hover {
+  background-color: var(--bg-muted);
+}
+
+.projectHeader {
+  display: flex;
+  align-items: baseline; /* Better alignment for text of different sizes */
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allows period to wrap on very small screens */
+}
+
+.projectTitle {
+  color: var(--text-accent);
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.projectPeriod {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  font-variant-numeric: tabular-nums; /* Makes dates line up nicely */
+}
+
+.projectDescription {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.projectUrl {
+  color: var(--text-muted);
+  font-size: 12px;
+}

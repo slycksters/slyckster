@@ -1,39 +1,19 @@
 .experienceSection {
-  align-items: center;
-  display: flex;
-  min-height: 100dvh;
+  min-height: 100vh; /* Fallback for older browsers */
+  min-height: 100dvh; /* Modern, mobile-perfect full screen height */
   padding: 75px 0;
   width: 100%;
+
+  /* Centers the child element */
+  display: flex;
+  align-items: center; /* Centers vertically */
 
   scroll-snap-align: start;
   scroll-snap-stop: always; /* Prevents skipping sections */
 }
 
-/* Header */
-.title {
-  font-size: 32px;
-  font-weight: 800;
-  line-height: 1.2;
-  margin-bottom: 24px;
-  position: relative;
-  text-align: center;
-  text-transform: capitalize;
-}
-
-.title::after {
-  background-color: var(--color-gold);
-  border-radius: 2px;
-  bottom: -6px;
-  content: '';
-  height: 3px;
-  left: 0;
-  position: absolute;
-  width: 40px;
-}
-
 @media (max-width: 768px) {
   .experienceSection {
-    align-items: flex-start;
     padding: 25px 0;
   }
 }
