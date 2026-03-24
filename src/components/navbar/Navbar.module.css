@@ -1,0 +1,56 @@
+.navbar {
+  bottom: 50px;
+  position: fixed; /* Fixed fixes the extra scroll space problem */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  z-index: 1000;
+}
+
+.linkSection {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.linkItem {
+  position: relative; /* Needed for the absolute border animation */
+  border-bottom: 5px solid var(--bg-muted);
+  color: var(--text-muted);
+  font-size: 30px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+
+/* Base style for the icon inside the link */
+.linkItem a {
+  color: inherit;
+  display: flex;
+  text-decoration: none;
+}
+
+/* The Gold State */
+.linkItemActive {
+  color: var(--text-primary);
+}
+
+/* The Animated Sliding Line */
+.activeBorderLine {
+  position: absolute;
+  bottom: -5px; /* Matches the 5px border-bottom thickness */
+  left: 0;
+  right: 0;
+  height: 5px;
+  background-color: var(--color-gold);
+}
+
+@media (max-width: 1020px) {
+  .navbar {
+    display: none;
+  }
+}

@@ -50,3 +50,41 @@ body::before {
   z-index: -1; /* Pushes the pattern BEHIND the body content */
   pointer-events: none; /* Ensures user can still click buttons underneath */
 }
+
+/* --- Custom Scrollbar Implementation --- */
+
+/* 1. For Firefox (uses standard properties) */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--bg-muted) var(--bg-primary);
+}
+
+/* 2. For Chrome, Edge, and Safari (Webkit) */
+::-webkit-scrollbar {
+  width: 10px;     /* Vertical scrollbar width */
+  height: 10px;    /* Horizontal scrollbar height */
+}
+
+/* The background of the scrollbar path */
+::-webkit-scrollbar-track {
+  background: var(--bg-primary); /* Blends perfectly with your main page background */
+}
+
+/* The actual moving bar (the thumb) */
+::-webkit-scrollbar-thumb {
+  background: var(--bg-muted);    /* A lifted charcoal so it's visible but subtle */
+  border-radius: 10px;
+  /* Adding a border creates "padding" around the thumb for a modern look */
+  border: 2px solid var(--bg-primary); 
+}
+
+/* Hover state for the thumb */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold);  /* Premium gold accent when interacting */
+  cursor: pointer;
+}
+
+/* Corner where horizontal and vertical scrollbars meet */
+::-webkit-scrollbar-corner {
+  background: var(--bg-primary);
+}
