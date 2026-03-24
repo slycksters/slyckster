@@ -27,12 +27,12 @@ export const BIO_CONTENT = {
       Philippines. I started coding in 2018 and have been continuously learning
       and improving my skills ever since.
     </>,
-    <>
-      When Im not building web applications, I unwind with games like League of
-      Legends, Mobile Legends, and Roblox, and enjoy music—especially
-      piano—playing through in-game instruments in Sky: Children of the Light
-      and Heartopia.
-    </>,
+    // <>
+    //   When Im not building web applications, I unwind with games like League of
+    //   Legends, Mobile Legends, and Roblox, and enjoy music—especially
+    //   piano—playing through in-game instruments in Sky: Children of the Light
+    //   and Heartopia.
+    // </>,
   ],
   quote: {
     text: "Code is like humor. When you have to explain it, it's bad.",

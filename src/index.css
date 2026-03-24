@@ -1,66 +1,24 @@
 @import "tailwindcss";
 
-:root {
-  --color-charcoal: #21201c;  /* deep warm black */
-  --color-silver:   #bcbcba;  /* light neutral gray */
-  --color-gold:     #a78e56;  /* accent / premium */
-  --color-crimson:  #bc1423;  /* primary action / error */
-  --color-blue:     #88acd0;  /* calm highlight / info */
-  --color-stone:    #c1beb9;  /* soft surface gray */
-  --color-indigo:   #4449a9;  /* brand / secondary action */
-  --color-taupe:    #87787b;  /* muted text */
-  --color-brick:    #9e2423;  /* deep red hover */
-  --color-white:    #ffffff;
-
-  --bg-primary:   #21201c;  /* main page background */
-  --bg-secondary: #2a2925;  /* cards, containers (lifted charcoal) */
-  --bg-elevated:  #34322e;  /* modals, dropdowns */
-  --bg-muted:     #87787b;  /* highlight panels */
-  --bg-inverse:   #ffffff;  /* rare light surfaces */
-
-  --text-primary:   #ffffff;  /* main reading text */
-  --text-secondary: #c1beb9;  /* softer readable text */
-  --text-muted:     #87787b;  /* hints, placeholders */
-  --text-inverse:   #21201c;  /* text on light bg */
-  --text-accent:    #a78e56;  /* highlighted text / emphasis */
-
-  /* Primary action */
-  --btn-primary-bg:    #bc1423;
-  --btn-primary-text:  #ffffff;
-  --btn-primary-hover: #9e2423;
-
-  /* Secondary action */
-  --btn-secondary-bg:    #4449a9;
-  --btn-secondary-text:  #ffffff;
-  --btn-secondary-hover: #3a3f96;
-
-  /* Neutral button */
-  --btn-neutral-bg:    #34322e;
-  --btn-neutral-text:  #ffffff;
-  --btn-neutral-hover: #3f3d39;
-
-  /* Status */
-  --status-danger:  #bc1423;
-  --status-info:    #88acd0;
-  --status-accent:  #a78e56;
-
-  --border-default: #34322e;
-  --border-strong:  #87787b;
-  --divider:        #34322e;
-  --focus-ring:     #88acd0;
-
-  background-color: var(--bg-primary);
-  color: var(--text-primary);
-  margin: 0;
-  padding: 0;
-}
-
 html {
   position: relative;
   background-color: var(--bg-primary);
   
   overflow-x: hidden; /* Hide horizontal scroll only */
   overflow-y: auto;   /* Explicitly allow vertical scroll */
+
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth; 
+}
+
+@media (max-width: 768px) {
+  html {
+    scroll-snap-type: none;
+  }
+
+  html > * {
+    scroll-snap-align: none;
+  }
 }
 
 body {

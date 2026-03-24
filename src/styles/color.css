@@ -1,0 +1,54 @@
+:root {
+  --color-charcoal: #21201c;  /* deep warm black */
+  --color-silver:   #d1d1cf;  /* light neutral gray */
+  --color-gold:     #c2a661;  /* accent / premium */
+  --color-crimson:  #e63946;  /* primary action / error */
+  --color-blue:     #a8c5e6;  /* calm highlight / info */
+  --color-stone:    #d1cfca;  /* soft surface gray */
+  --color-indigo:   #5c62d6;  /* brand / secondary action */
+  --color-taupe:    #948a8c;  /* muted text */
+  --color-brick:    #b52a29;  /* deep red hover */
+  --color-white:    #ffffff;
+
+  --bg-primary:   #21201c;  /* main page background */
+  --bg-secondary: #2d2c28;  /* cards, containers (lifted charcoal) */
+  --bg-elevated:  #3d3b36;  /* modals, dropdowns */
+  --bg-muted:     #4a4843;  /* highlight panels */
+  --bg-inverse:   #ffffff;  /* rare light surfaces */
+
+  --text-primary:   #ffffff;  /* main reading text */
+  --text-secondary: #d1cfca;  /* softer readable text */
+  --text-muted:     #948a8c;  /* hints, placeholders */
+  --text-inverse:   #21201c;  /* text on light bg */
+  --text-accent:    #c2a661;  /* highlighted text / emphasis */
+
+  /* Primary action */
+  --btn-primary-bg:    #e63946;
+  --btn-primary-text:  #ffffff;
+  --btn-primary-hover: #b52a29;
+
+  /* Secondary action */
+  --btn-secondary-bg:    #5c62d6;
+  --btn-secondary-text:  #ffffff;
+  --btn-secondary-hover: #4a4fb5;
+
+  /* Neutral button */
+  --btn-neutral-bg:    #3d3b36;
+  --btn-neutral-text:  #ffffff;
+  --btn-neutral-hover: #4a4843;
+
+  /* Status */
+  --status-danger:  #e63946;
+  --status-info:    #a8c5e6;
+  --status-accent:  #c2a661;
+
+  --border-default: #3d3b36;
+  --border-strong:  #5c5a54;
+  --divider:        #34322e;
+  --focus-ring:     #a8c5e6;
+
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+}

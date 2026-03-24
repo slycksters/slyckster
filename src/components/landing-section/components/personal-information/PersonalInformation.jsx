@@ -41,14 +41,6 @@ export const PersonalInformation = () => {
           — {BIO_CONTENT.quote.author}
         </figcaption>
       </figure>
-
-      <button
-        aria-label={`Learn more about ${BIO_CONTENT.name}`}
-        className={styles.button}
-        type={'button'}
-      >
-        Learn more
-      </button>
     </article>
   );
 };

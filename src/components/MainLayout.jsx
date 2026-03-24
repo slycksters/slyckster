@@ -1,4 +1,4 @@
-import Experience from './experience/Experience';
+import Experience from './experience-section/ExperienceSection';
 import LandingSection from './landing-section/LandingSection';
 
 const MainLayoutComponent = () => {

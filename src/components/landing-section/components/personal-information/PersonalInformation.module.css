@@ -77,28 +77,3 @@
   line-height: 1.4;
   margin: 0;
 }
-
-/* --- Button CSS */
-.button {
-  background: transparent;
-  border: 1px solid var(--color-blue);
-  border-radius: 4px;
-  color: var(--text-primary);
-  cursor: pointer;
-  
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  
-  margin-top: 32px;
-  padding: 12px 32px;
-  transition: all 0.3s ease;
-}
-
-.button:hover {
-  background-color: var(--color-blue);
-  box-shadow: 0 0 20px rgba(188, 20, 35, 0.4); /* Subtle red glow */
-  color: var(--text-primary);
-  transform: translateY(-2px);
-}

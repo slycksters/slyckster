@@ -20,9 +20,9 @@ export const TechStack = () => {
 
   return (
     <section aria-labelledby={'stack-title'} className={styles.techStack}>
-      <h2 id="stack-title" className={styles.mainTitle}>
+      <h4 id={'stack-title'} className={styles.mainTitle}>
         My Stack
-      </h2>
+      </h4>
 
       <div className={styles.section}>
         <h3 className={styles.label}>Core Proficiencies</h3>
