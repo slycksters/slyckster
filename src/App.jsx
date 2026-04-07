@@ -7,7 +7,7 @@ function App() {
     <motion.div
       animate={{ opacity: 1, y: 0 }}
       initial={{ opacity: 0, y: 10 }}
-      transition={{ duration: 0.8, ease: "easeOut" }}
+      transition={{ duration: 3, ease: "easeOut" }}
     >
       <MainLayoutComponent />
     </motion.div>
